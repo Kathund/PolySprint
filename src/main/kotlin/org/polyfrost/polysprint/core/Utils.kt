@@ -20,7 +20,6 @@ package org.polyfrost.polysprint.core
 
 import cc.polyfrost.oneconfig.libs.universal.UKeyboard
 import cc.polyfrost.oneconfig.libs.universal.UScreen
-import cc.polyfrost.oneconfig.utils.hypixel.HypixelUtils
 import net.minecraft.client.settings.KeyBinding
 import org.lwjgl.input.Mouse
 import org.polyfrost.polysprint.PolySprint.gameSettings
@@ -35,7 +34,7 @@ fun shouldSetSneak(keyBinding: KeyBinding): Boolean {
 }
 
 fun shouldFlyBoost(): Boolean {
-    return gameSettings.keyBindSprint.isKeyDown && PolySprintConfig.enabled && PolySprintConfig.toggleFlyBoost && player != null && player!!.capabilities.isFlying && player!!.capabilities.isCreativeMode && !HypixelUtils.INSTANCE.isHypixel
+    return gameSettings.keyBindSprint.isKeyDown && PolySprintConfig.enabled && PolySprintConfig.toggleFlyBoost && player != null && player!!.capabilities.isFlying && player!!.capabilities.isCreativeMode
 }
 
 fun checkKeyCode(keyCode: Int) = if (keyCode > 0) UKeyboard.isKeyDown(keyCode) else Mouse.isButtonDown(
