@@ -96,7 +96,7 @@ object PolySprintConfig : Config(
     var keybindToggleSneakKey = OneKeyBind(UKeyboard.KEY_NONE)
 
     @Info(
-        text = "Warning! Some servers may determent this as a cheat and ban you",
+        text = "Warning: Some servers may determine this to be a cheat and ban you for it. Use at your own risk",
         subcategory = "Fly Boost",
         type = InfoType.ERROR,
         size = 2
